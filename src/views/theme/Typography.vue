@@ -36,7 +36,6 @@
           <b-row>
             <b-col sm="2">
               <b-form-group>
-                <!-- <label for="name">Amount</label> -->
                 <b-form-input type="text" id="name" placeholder="Enter your IM amount"></b-form-input>
               </b-form-group>
             </b-col>
