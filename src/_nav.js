@@ -16,12 +16,22 @@ export default {
     },
     {
       name: 'Round 1',
-      url: '/theme/typography',
+      url: '/round/round1',
       icon: 'icon-pencil'
     },
     {
       name: 'Round 2',
-      url: '/theme/colors',
+      url: '/round/round2',
+      icon: 'icon-drop'
+    },
+    {
+      name: 'Round 3',
+      url: '/round/round3',
+      icon: 'icon-drop'
+    },
+    {
+      name: 'Round 4',
+      url: '/round/round4',
       icon: 'icon-drop'
     },
     /*{
