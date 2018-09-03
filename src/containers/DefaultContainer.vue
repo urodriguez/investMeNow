@@ -24,11 +24,9 @@
         </b-nav-item-->
         <!--DefaultHeaderDropdownAccnt/-->
       </b-navbar-nav>
-<<<<<<< HEAD
+
       <!--<AsideToggler class="d-none d-lg-block" />-->
-=======
-      <!--AsideToggler class="d-none d-lg-block" /-->
->>>>>>> 484b788e8e4e99dc8931f0612e2c8d5fe18c971f
+
       <!--<AsideToggler class="d-lg-none" mobile />-->
     </AppHeader>
 
