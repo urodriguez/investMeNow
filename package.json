@@ -1,11 +1,9 @@
 {
-  "name": "@coreui/coreui-free-vue-admin-template",
-  "version": "2.0.0",
-  "description": "Open Source Bootstrap Admin Template",
-  "author": "Łukasz Holeczek",
-  "homepage": "http://coreui.io",
-  "copyright": "Copyright 2018 creativeLabs Łukasz Holeczek",
-  "license": "MIT",
+  "name": "investmenow",
+  "version": "1.0.0",
+  "description": "Investing Platform",
+  "author": "endava",
+  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

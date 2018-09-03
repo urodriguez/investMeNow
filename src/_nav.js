@@ -3,11 +3,7 @@ export default {
     {
       name: 'Dashboard',
       url: '/dashboard',
-      icon: 'icon-speedometer',
-      badge: {
-        variant: 'primary',
-        text: 'NEW'
-      }
+      icon: 'icon-speedometer'
     },
     {
       title: true,
@@ -28,7 +24,7 @@ export default {
       url: '/theme/colors',
       icon: 'icon-drop'
     },
-    {
+    /*{
       title: true,
       name: 'Components',
       class: '',
@@ -255,7 +251,7 @@ export default {
           icon: 'icon-star'
         }
       ]
-    },
+    },*/
 /*     {
       name: 'Download CoreUI',
       url: 'http://coreui.io/vue/',
