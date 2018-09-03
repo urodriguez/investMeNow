@@ -25,10 +25,16 @@
           </tbody>
         </table>
         
-          <p> <strong>Total founded:</strong> </p>
-          <div>
-            <b-progress :value="80" variant="success" striped :animated="animate" class="mb-2"></b-progress>
-          </div>
+        <p> <strong>Total founded:</strong> </p>
+
+        <div>
+          <b-progress class="mt-1" :max="max" show-value>
+            <b-progress-bar :value="counter" variant="success">
+              <strong>{{ counter.toFixed(3) }} / {{ max }}</strong>
+            </b-progress-bar>
+          </b-progress>
+        </div>
+
       </div>
     </div>
 
@@ -114,6 +120,47 @@
 
 <script>
 export default {
-  name: 'round1'
+  name: 'round1',
+  data () {
+    return {
+      counter: 8750000,
+      max: 10000000,
+      max2: 50,
+      value: 33.333333333,
+      value3: 75,
+      bars: [
+        {variant: 'success', value: 75},
+        {variant: 'info', value: 75},
+        {variant: 'warning', value: 75},
+        {variant: 'danger', value: 75},
+        {variant: 'primary', value: 75},
+        {variant: 'secondary', value: 75},
+        {variant: 'dark', value: 75}
+      ],
+      timer: null,
+      striped: true,
+      animate: true,
+      max3: 100,
+      values: [ 15, 30, 20 ]
+    }
+  },
+  methods: {
+    clicked () {
+      this.counter = Math.random() * this.max
+      console.log('Change progress to ' +
+          Math.round(this.counter * 100) / 100)
+    }
+  },
+  mounted () {
+    this.timer = setInterval(() => {
+      this.bars.forEach(bar => {
+        bar.value = 25 + (Math.random() * 75)
+      })
+    }, 2000)
+  },
+  beforeDestroy () {
+    clearInterval(this.timer)
+    this.timer = null
+  }
 }
 </script>

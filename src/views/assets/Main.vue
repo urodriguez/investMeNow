@@ -15,12 +15,9 @@
           {{item.description}}}
         </p>
 
-
         <router-link :to="{name: 'detail'}">
           <b-button variant="primary">Go</b-button>
         </router-link>
-
-
 
         </b-card>
         </b-col>
@@ -57,7 +54,6 @@
     
     </b-row>
 </b-container>
-
 
 </div>
 </template>
