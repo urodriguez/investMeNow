@@ -1,10 +1,10 @@
 export default {
   items: [
-    {
+    /*{
       name: 'Dashboard',
       url: '/dashboard',
       icon: 'icon-speedometer'
-    },
+    },*/
     {
       title: true,
       name: 'Founding',
@@ -46,12 +46,12 @@ export default {
     {
       name: 'Trade',
       url: '/pages/trade',
-      icon: 'far fa exchange-alt'
+      icon: 'fas fa-exchange-alt'
     },
     {
       name: 'Assets',
       url: '/pages/assets',
-      icon: 'icon-drop'
+      icon: 'fas fa-briefcase'
     }
     /*{
       title: true,
