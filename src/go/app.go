@@ -14,6 +14,11 @@ type Asset struct {
     Image       string `json:"image"`
 }
 
+type LoginModel struct {
+	UserName string
+	Password string
+}
+
 type Assets []Asset
 
 func AllAssetsEndPoint(w http.ResponseWriter, r *http.Request) {	
@@ -30,9 +35,20 @@ func AllAssetsEndPoint(w http.ResponseWriter, r *http.Request) {
 }
 
 
+
+func Login(w http.ResponseWriter, r *http.Request) {
+
+	var t LoginModel
+	
+	json.NewDecoder(r.Body).Decode(&t)
+    json.NewEncoder(w).Encode(t.UserName == "user" && t.Password=="user")
+}
+
+
 func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/assets", AllAssetsEndPoint).Methods("GET")
+	r.HandleFunc("/login", Login).Methods("POST")
 	if err := http.ListenAndServe(":3000", r); err != nil {
 		log.Fatal(err)
 	}
