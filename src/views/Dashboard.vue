@@ -28,67 +28,72 @@
   </b-row>
 
   <b-row>
-    <b-col sm="6" lg="6">
+    <b-col sm="4" lg="4">
       <b-card title="Buy" img-alt="Image" img-top tag="article">
-        <div class="divTable blueTable">
+        <div class="divTable blueTable buy">
           <div class="divTableBody">
             <div class="divTableRow">
-              <div class="divTableCell">15.09016401</div>
+              <div class="divTableCell"><i class="fas fa-chevron-down"></i> 15.09016401</div>
               <div class="divTableCell">13.98245161</div>
               <div class="divTableCell">12:05h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">11.98245161</div>
+              <div class="divTableCell"><i class="fas fa-chevron-down"></i> 11.98245161</div>
               <div class="divTableCell">16.00098766</div>
               <div class="divTableCell">12:10h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">21.67856734</div>
+              <div class="divTableCell"><i class="fas fa-chevron-down"></i> 21.67856734</div>
               <div class="divTableCell">14.12312223</div>
               <div class="divTableCell">12:15h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">15.09016401</div>
+              <div class="divTableCell"><i class="fas fa-chevron-down"></i> 15.09016401</div>
               <div class="divTableCell">13.98245161</div>
               <div class="divTableCell">12:05h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">11.98245161</div>
+              <div class="divTableCell"><i class="fas fa-chevron-down"></i> 11.98245161</div>
               <div class="divTableCell">16.00098766</div>
               <div class="divTableCell">12:10h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">21.67856734</div>
+              <div class="divTableCell"><i class="fas fa-chevron-down"></i> 21.67856734</div>
               <div class="divTableCell">14.12312223</div>
               <div class="divTableCell">12:15h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">15.09016401</div>
+              <div class="divTableCell"><i class="fas fa-chevron-down"></i> 15.09016401</div>
               <div class="divTableCell">13.98245161</div>
               <div class="divTableCell">12:05h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">11.98245161</div>
+              <div class="divTableCell"><i class="fas fa-chevron-down"></i> 11.98245161</div>
               <div class="divTableCell">16.00098766</div>
               <div class="divTableCell">12:10h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">21.67856734</div>
+              <div class="divTableCell"><i class="fas fa-chevron-down"></i> 21.67856734</div>
               <div class="divTableCell">14.12312223</div>
               <div class="divTableCell">12:15h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">15.09016401</div>
+              <div class="divTableCell"><i class="fas fa-chevron-down"></i> 21.67856734</div>
+              <div class="divTableCell">14.12312223</div>
+              <div class="divTableCell">12:15h 03/09/2018</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell"><i class="fas fa-chevron-down"></i> 15.09016401</div>
               <div class="divTableCell">13.98245161</div>
               <div class="divTableCell">12:05h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">11.98245161</div>
+              <div class="divTableCell"><i class="fas fa-chevron-down"></i> 11.98245161</div>
               <div class="divTableCell">16.00098766</div>
               <div class="divTableCell">12:10h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">21.67856734</div>
+              <div class="divTableCell"><i class="fas fa-chevron-down"></i> 21.67856734</div>
               <div class="divTableCell">14.12312223</div>
               <div class="divTableCell">12:15h 03/09/2018</div>
             </div>
@@ -96,67 +101,116 @@
         </div>
       </b-card>
     </b-col>
-    <b-col sm="6" lg="6">
+    <b-col sm="4" lg="4">
+      <b-row>
+      <b-card title="Buy or Sell Invest Money" img-alt="Image" img-top tag="article">
+        <b-row>
+        <b-col sm="6" lg="6">
+          <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+            <b-form-group id="exampleInputGroup1"
+                          label="Price"
+                          label-for="exampleInput1">
+              <b-form-input id="exampleInput1"
+                            type="text"
+                            required
+                            placeholder="Price">
+              </b-form-input>
+            </b-form-group>
+            <b-form-group id="exampleInputGroup2"
+                          label="Amount"
+                            label-for="exampleInput2">
+              <b-form-input id="exampleInput2"
+                            type="text"
+                            required
+                            placeholder="Amount">
+              </b-form-input>
+            </b-form-group>
+            <b-button type="submit" variant="primary">Buy <i class="fas fa-angle-double-up"></i></b-button>
+          </b-form>
+        </b-col>
+        <b-col sm="6" lg="6">
+          <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+            <b-form-group id="exampleInputGroup1"
+                          label="Price"
+                          label-for="exampleInput1">
+              <b-form-input id="exampleInput1"
+                            type="text"
+                            required
+                            placeholder="Price">
+              </b-form-input>
+            </b-form-group>
+            <b-form-group id="exampleInputGroup2"
+                          label="Amount"
+                            label-for="exampleInput2">
+              <b-form-input id="exampleInput2"
+                            type="text"
+                            required
+                            placeholder="Amount">
+              </b-form-input>
+            </b-form-group>
+            <b-button type="submit" variant="danger">Sell <i class="fas fa-angle-double-down"></i></b-button>
+          </b-form>
+        </b-col>
+        </b-row>
+      </b-card>
+  </b-row>
+    </b-col>
+    <b-col sm="4" lg="4">
       <b-card title="Sale" img-alt="Image" img-top tag="article">
-        <div class="divTable blueTable">
+        <div class="divTable blueTable sell">
           <div class="divTableBody">
             <div class="divTableRow">
-              <div class="divTableCell">15.09016401</div>
+              <div class="divTableCell"><i class="fas fa-chevron-up"></i> 15.09016401</div>
               <div class="divTableCell">13.98245161</div>
               <div class="divTableCell">12:05h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">11.98245161</div>
+              <div class="divTableCell"><i class="fas fa-chevron-up"></i> 11.98245161</div>
               <div class="divTableCell">16.00098766</div>
               <div class="divTableCell">12:10h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">21.67856734</div>
+              <div class="divTableCell"><i class="fas fa-chevron-up"></i> 21.67856734</div>
               <div class="divTableCell">14.12312223</div>
               <div class="divTableCell">12:15h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">15.09016401</div>
+              <div class="divTableCell"><i class="fas fa-chevron-up"></i> 15.09016401</div>
               <div class="divTableCell">13.98245161</div>
               <div class="divTableCell">12:05h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">11.98245161</div>
+              <div class="divTableCell"><i class="fas fa-chevron-up"></i> 11.98245161</div>
               <div class="divTableCell">16.00098766</div>
               <div class="divTableCell">12:10h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">21.67856734</div>
+              <div class="divTableCell"><i class="fas fa-chevron-up"></i> 15.09016401</div>
+              <div class="divTableCell">13.98245161</div>
+              <div class="divTableCell">12:05h 03/09/2018</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell"><i class="fas fa-chevron-up"></i> 11.98245161</div>
+              <div class="divTableCell">16.00098766</div>
+              <div class="divTableCell">12:10h 03/09/2018</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell"><i class="fas fa-chevron-up"></i> 21.67856734</div>
               <div class="divTableCell">14.12312223</div>
               <div class="divTableCell">12:15h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">15.09016401</div>
+              <div class="divTableCell"><i class="fas fa-chevron-up"></i> 15.09016401</div>
               <div class="divTableCell">13.98245161</div>
               <div class="divTableCell">12:05h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">11.98245161</div>
+              <div class="divTableCell"><i class="fas fa-chevron-up"></i> 11.98245161</div>
               <div class="divTableCell">16.00098766</div>
               <div class="divTableCell">12:10h 03/09/2018</div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">21.67856734</div>
-              <div class="divTableCell">14.12312223</div>
-              <div class="divTableCell">12:15h 03/09/2018</div>
-            </div>
-            <div class="divTableRow">
-              <div class="divTableCell">15.09016401</div>
-              <div class="divTableCell">13.98245161</div>
-              <div class="divTableCell">12:05h 03/09/2018</div>
-            </div>
-            <div class="divTableRow">
-              <div class="divTableCell">11.98245161</div>
-              <div class="divTableCell">16.00098766</div>
-              <div class="divTableCell">12:10h 03/09/2018</div>
-            </div>
-            <div class="divTableRow">
-              <div class="divTableCell">21.67856734</div>
+              <div class="divTableCell"> <i class="fas fa-chevron-up"></i> 21.67856734</div>
               <div class="divTableCell">14.12312223</div>
               <div class="divTableCell">12:15h 03/09/2018</div>
             </div>
@@ -166,62 +220,7 @@
     </b-col>
   </b-row>
 
-  <b-row>
-    <b-col sm="6" lg="6">
-      <b-card>
-        <b-row>
-    <b-col sm="6" lg="6">
-      
-      
-      <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-        <b-form-group id="exampleInputGroup1"
-                      label="Price"
-                      label-for="exampleInput1">
-          <b-form-input id="exampleInput1"
-                        type="text"
-                        required
-                        placeholder="Price">
-          </b-form-input>
-        </b-form-group>
-        <b-form-group id="exampleInputGroup2"
-                      label="Amount"
-                        label-for="exampleInput2">
-          <b-form-input id="exampleInput2"
-                        type="text"
-                        required
-                        placeholder="Amount">
-          </b-form-input>
-        </b-form-group>
-        <b-button type="submit" variant="primary">Buy <i class="fas fa-angle-double-up"></i></b-button>
-      </b-form>
-    </b-col>
-    <b-col sm="6" lg="6">
-      <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-        <b-form-group id="exampleInputGroup1"
-                      label="Price"
-                      label-for="exampleInput1">
-          <b-form-input id="exampleInput1"
-                        type="text"
-                        required
-                        placeholder="Price">
-          </b-form-input>
-        </b-form-group>
-        <b-form-group id="exampleInputGroup2"
-                      label="Amount"
-                        label-for="exampleInput2">
-          <b-form-input id="exampleInput2"
-                        type="text"
-                        required
-                        placeholder="Amount">
-          </b-form-input>
-        </b-form-group>
-        <b-button type="submit" variant="danger">Sell <i class="fas fa-angle-double-down"></i></b-button>
-      </b-form>
-    </b-col>
-  </b-row>
-      </b-card>
-    </b-col>
-  </b-row>
+
 
   
   </div>

@@ -15,7 +15,6 @@ div.blueTable {
   }
   .divTable.blueTable .divTableBody .divTableCell {
     font-size: 14px;
-    color: #333333;
   }
   .divTable.blueTable .divTableRow:nth-child(even) {
     background: #F5F5F5;
@@ -47,3 +46,11 @@ div.blueTable {
   .divTableHeading { display: table-header-group;}
   .divTableFoot { display: table-footer-group;}
   .divTableBody { display: table-row-group;}
+
+  .buy .divTableRow div:first-child {
+    color: green;
+  }
+
+  .sell .divTableRow div:first-child {
+    color: red;
+  }
