@@ -256,7 +256,7 @@ export default {
         }
       ]
     },
-    {
+/*     {
       name: 'Download CoreUI',
       url: 'http://coreui.io/vue/',
       icon: 'icon-cloud-download',
@@ -268,6 +268,6 @@ export default {
       url: 'http://coreui.io/pro/vue/',
       icon: 'icon-layers',
       variant: 'danger'
-    }
+    } */
   ]
 }
