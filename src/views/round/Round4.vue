@@ -34,7 +34,9 @@
             <strong>Buy </strong>
           </div>
 
-          <p>Next round starts in: </p>
+          <p> <strong>From:</strong> 21/12/2018  to 30/12/2018  </p>
+
+          <p> <strong>Next round starts in:</strong> </p>
 
           <div>
             <b-progress :value="30" variant="info" striped :animated="animate" class="mb-2"></b-progress>
