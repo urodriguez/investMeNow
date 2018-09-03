@@ -3,19 +3,23 @@
 
 <b-container class="bv-example-row">
     <b-row>
-        <b-col><b-card v-for="item in investItems" v-bind:title="item.name"
+        <b-col>
+          <b-card v-for="item in investItems" :key="item.name" v-bind:title="item.name"
           v-bind:img-src="item.image"
           img-alt="Image"
           img-top
           tag="article"
           style="max-width: 20rem;"
           class="mb-2">
-    <p class="card-text">
-      {{item.description}}}
-    </p>
+        <p class="card-text">
+          {{item.description}}}
+        </p>
     <b-button href="#" variant="primary">Go</b-button>
-  </b-card></b-col>
-        <b-col><b-card v-for="item in investItems1" v-bind:title="item.name"
+        </b-card>
+        </b-col>
+
+    <b-col>
+          <b-card v-for="item in investItems1" :key="item.name" v-bind:title="item.name"
           v-bind:img-src="item.image"
           img-alt="Image"
           img-top
@@ -26,8 +30,11 @@
       {{item.description}}
     </p>
     <b-button href="#" variant="primary">Go</b-button>
-  </b-card></b-col>
-  <b-col><b-card v-for="item in investItems2" v-bind:title="item.name"
+  </b-card>
+  </b-col>
+
+  <b-col>
+    <b-card v-for="item in investItems2" :key="item.name" v-bind:title="item.name"
           v-bind:img-src="item.image"
           img-alt="Image"
           img-top
@@ -38,7 +45,9 @@
       {{item.description}}}
     </p>
     <b-button href="#" variant="primary">Go</b-button>
-  </b-card></b-col>
+  </b-card>
+  </b-col>
+    
     </b-row>
 </b-container>
 
