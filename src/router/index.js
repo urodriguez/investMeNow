@@ -10,6 +10,7 @@ const Dashboard = () => import('@/views/Dashboard')
 const Colors = () => import('@/views/theme/Colors')
 const Typography = () => import('@/views/theme/Typography')
 
+
 const Charts = () => import('@/views/Charts')
 const Widgets = () => import('@/views/Widgets')
 
@@ -67,7 +68,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/dashboard',
+      redirect: '/pages/login',
       name: 'Home',
       component: DefaultContainer,
       children: [

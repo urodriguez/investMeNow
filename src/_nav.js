@@ -24,6 +24,25 @@ export default {
       url: '/theme/colors',
       icon: 'icon-drop'
     },
+    {
+      title: true,
+      name: 'My Invest',
+      class: '',
+      wrapper: {
+        element: '',
+        attributes: {}
+      }
+    },
+    {
+      name: 'Trade',
+      url: '/pages/trade',
+      icon: 'far fa exchange-alt'
+    },
+    {
+      name: 'Assets',
+      url: '/pages/assets',
+      icon: 'icon-drop'
+    }
     /*{
       title: true,
       name: 'Components',
