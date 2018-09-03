@@ -15,7 +15,7 @@
                   </b-input-group>
                   <b-input-group class="mb-4">
                     <b-input-group-prepend><b-input-group-text><i class="icon-lock"></i></b-input-group-text></b-input-group-prepend>
-                    <b-form-input type="password" class="form-control" placeholder="Password" autocomplete="current-password" />
+                    <b-form-input type="password" class="form-control" placeholder="Password" autocomplete="current-password"/>
                   </b-input-group>
                   <b-row>
                     <b-col cols="6">
@@ -47,12 +47,22 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'Login',
   methods: {
     login: function () {
-      this.$router.push('/round')
-
+      axios.post('http://localhost:3000/login', {UserName: "user", Password: "user"},
+      { 
+        headers: { 'Content-type': 'application/x-www-form-urlencoded', }
+      })
+      .then(function (response) {
+        this.$router.push('/round')
+      }.bind(this))
+      .catch(function (error) {
+        alert("Invalid login")
+      });
     }
   }
 }

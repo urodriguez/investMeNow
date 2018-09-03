@@ -38,6 +38,8 @@ func AllAssetsEndPoint(w http.ResponseWriter, r *http.Request) {
 
 func Login(w http.ResponseWriter, r *http.Request) {
 
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	
 	var t LoginModel
 	
 	json.NewDecoder(r.Body).Decode(&t)
