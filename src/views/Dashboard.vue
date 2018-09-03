@@ -29,7 +29,7 @@
 
   <b-row>
     <b-col sm="6" lg="6">
-      <b-card title="Buy History" img-alt="Image" img-top tag="article">
+      <b-card title="Buy" img-alt="Image" img-top tag="article">
         <div class="divTable blueTable">
           <div class="divTableBody">
             <div class="divTableRow">
@@ -97,7 +97,7 @@
       </b-card>
     </b-col>
     <b-col sm="6" lg="6">
-      <b-card title="Sale History" img-alt="Image" img-top tag="article">
+      <b-card title="Sale" img-alt="Image" img-top tag="article">
         <div class="divTable blueTable">
           <div class="divTableBody">
             <div class="divTableRow">

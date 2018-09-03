@@ -1,60 +1,46 @@
 <template>
 <div class="animated fadeIn">
 
-<b-container class="bv-example-row">
-    <b-row>
-        <b-col>
-          <b-card v-for="item in investItems" :key="item.name" v-bind:title="item.name"
+  <b-row>
+      <b-col md="3" v-for="item in investItems" :key="item.name">
+          <b-card  v-bind:title="item.name"
           v-bind:img-src="item.image"
           img-alt="Image"
           img-top
           tag="article"
-          style="max-width: 20rem;"
-          class="mb-2">
-        <p class="card-text">
+          >
+        <p class="card-text" style="height: 60px;">
           {{item.description}}}
         </p>
 
+
         <router-link :to="{name: 'detail'}">
-          <b-button variant="primary">Go</b-button>
+          <b-button variant="primary">View <i class="far fa-eye"></i></b-button>
         </router-link>
-
         </b-card>
-        </b-col>
+      </b-col>
+  </b-row>
 
-    <b-col>
-          <b-card v-for="item in investItems1" :key="item.name" v-bind:title="item.name"
+
+  <b-row>
+      <b-col md="3" v-for="item in investItems1" :key="item.name">
+          <b-card  v-bind:title="item.name"
           v-bind:img-src="item.image"
           img-alt="Image"
           img-top
           tag="article"
-          style="max-width: 20rem;"
-          class="mb-2">
-    <p class="card-text">
-      {{item.description}}
-    </p>
-    <b-button href="#" variant="primary">Go</b-button>
-  </b-card>
-  </b-col>
+          >
+        <p class="card-text" style="height: 60px;">
+          {{item.description}}}
+        </p>
 
-  <b-col>
-    <b-card v-for="item in investItems2" :key="item.name" v-bind:title="item.name"
-          v-bind:img-src="item.image"
-          img-alt="Image"
-          img-top
-          tag="article"
-          style="max-width: 20rem;"
-          class="mb-2">
-    <p class="card-text">
-      {{item.description}}}
-    </p>
-    <b-button href="#" variant="primary">Go</b-button>
-  </b-card>
-  </b-col>
-    
-    </b-row>
-</b-container>
 
+        <router-link :to="{name: 'detail'}">
+          <b-button variant="primary">View <i class="far fa-eye"></i></b-button> 
+        </router-link>
+        </b-card>
+      </b-col>
+  </b-row>
 </div>
 </template>
 

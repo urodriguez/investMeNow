@@ -21,10 +21,10 @@ func AllAssetsEndPoint(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	
 	assets := Assets{
-	  { Name: "Real State / Buildings", Description: "Real State / Buildings Real State / Buildings Real State / Buildings Real State / Buildings", Image:"https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg?cs=srgb&dl=city-skyline-buildings-290275.jpg&fm=jpg" },
-      { Name: "Copyrights", Description: "Copyrights Copyrights Copyrights Copyrights", Image:"https://sites.google.com/site/derechosdedeautorr/_/rsrc/1468755296557/para-que-sirve/11504987-vector-sello-danado-los-derechos-de-autor.jpg" },
-      { Name: "Independent Project", Description: "Independent Project Independent Project Independent Project Independent Project", Image:"http://factorypyme.thestandardit.com/wp-content/uploads/sites/5/2014/09/Adquisicion.jpg" },
-      { Name: "Next Sport Stars", Description: "Next Sport Stars Next Sport Stars Next Sport Stars Next Sport Stars", Image:"https://pbs.twimg.com/profile_images/875393235354439680/qWkpDQnh_400x400.jpg" }}
+	  { Name: "Real State / Buildings", Description: "Real State / Buildings Real State / Buildings Real State / Buildings Real State / Buildings", Image:"https://www.apafacadesystems.com/wp-content/uploads/2017/12/theroy_newresized.jpg" },
+      { Name: "Copyrights", Description: "Copyrights Copyrights Copyrights Copyrights", Image:"http://majesticproject.com/final-year-projects/images/content/feature/3.jpg" },
+      { Name: "Independent Project", Description: "Independent Project Independent Project Independent Project Independent Project", Image:"http://www.gruposirem.mx/images/includes/projectimage5.jpg" },
+      { Name: "Next Sport Stars", Description: "Next Sport Stars Next Sport Stars Next Sport Stars Next Sport Stars", Image:"https://i.pinimg.com/originals/ff/05/fa/ff05faceda3bbab1c53a0f7eed5a9a92.jpg" }}
 
     json.NewEncoder(w).Encode(assets)
 }
