@@ -19,7 +19,7 @@
                   </b-input-group>
                   <b-row>
                     <b-col cols="6">
-                      <b-button variant="primary" v-on:click="login" class="px-4">Login</b-button>
+                      <b-button variant="primary" v-on:click="login" class="">Login <i class="fas fa-angle-right"></i></b-button>
                     </b-col>
                     <b-col cols="6" class="text-right">
                       <b-button variant="link" class="px-0">Forgot password?</b-button>
@@ -30,9 +30,12 @@
             </b-card>
             <b-card no-body class="text-white bg-primary py-5 d-md-down-none" style="width:44%">
               <b-card-body class="text-center">
+                <div class="text-center">
+                  <img class="navbar-brand-full" src="img/brand/logo-inver.png" style="max-width:250px; max-height:250px;">
+                  </div>
                 <div>
                   <h2>Sign up</h2>
-                  <b-button variant="primary" class="active mt-3">Register Now!</b-button>
+                  <b-button variant="primary" class="active mt-3">Register Now <i class="fas fa-sign-in-alt"></i></b-button>
                 </div>
               </b-card-body>
             </b-card>
