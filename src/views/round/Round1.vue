@@ -25,12 +25,12 @@
           </tbody>
         </table>
         
-        <p> <strong>Total founded:</strong> </p>
+        <h4> <strong>Total founded:</strong> </h4>
 
         <div>
-          <b-progress class="mt-1" :max="max" show-value>
+          <b-progress height="32px" class="mt-1" :max="max" show-value>
             <b-progress-bar :value="counter" variant="success">
-              <strong>{{ counter.toFixed(3) }} / {{ max }}</strong>
+              <strong style="font-size: 16px">{{ counter }} / {{ max }}</strong>
             </b-progress-bar>
           </b-progress>
         </div>
