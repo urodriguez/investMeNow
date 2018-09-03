@@ -17,22 +17,22 @@ export default {
     {
       name: 'Round 1',
       url: '/round/round1',
-      icon: 'icon-pencil'
+      icon: 'fas fa-dollar-sign'
     },
     {
       name: 'Round 2',
       url: '/round/round2',
-      icon: 'icon-drop'
+      icon: 'fas fa-dollar-sign'
     },
     {
       name: 'Round 3',
       url: '/round/round3',
-      icon: 'icon-drop'
+      icon: 'fas fa-dollar-sign'
     },
     {
       name: 'Round 4',
       url: '/round/round4',
-      icon: 'icon-drop'
+      icon: 'fas fa-dollar-sign'
     },
     /*{
       title: true,
