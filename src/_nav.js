@@ -16,13 +16,23 @@ export default {
     },
     {
       name: 'Round 1',
-      url: '/theme/typography',
-      icon: 'icon-pencil'
+      url: '/round/round1',
+      icon: 'fas fa-dollar-sign'
     },
     {
       name: 'Round 2',
-      url: '/theme/colors',
-      icon: 'icon-drop'
+      url: '/round/round2',
+      icon: 'fas fa-dollar-sign'
+    },
+    {
+      name: 'Round 3',
+      url: '/round/round3',
+      icon: 'fas fa-dollar-sign'
+    },
+    {
+      name: 'Round 4',
+      url: '/round/round4',
+      icon: 'fas fa-dollar-sign'
     },
     {
       title: true,

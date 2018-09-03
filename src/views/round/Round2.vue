@@ -7,7 +7,7 @@
 
       <div class="card-body">
         <p>In the next table you can check the current price for one InvestMoney (IM)</p>
-        <p>(max amount for this round is: <strong>1200 IM</strong>)</p>
+        <p>(max amount for this round is: <strong>500.000 IM</strong>)</p>
         <table class="table">
           <thead>
             <tr>
@@ -20,7 +20,7 @@
               <td>
                 <p>1</p>
               </td>
-              <td><span class="h5">120 USD</span></td>
+              <td><span class="h5">15 USD</span></td>
             </tr>
           </tbody>
         </table>
@@ -34,10 +34,12 @@
             <strong>Buy </strong>
           </div>
 
-          <p>Next round starts in: </p>
+          <p> <strong>From:</strong> 07/12/2018  to 14/12/2018  </p>
+
+          <p> <strong>Next round starts in:</strong> </p>
 
           <div>
-            <b-progress :value="50" variant="info" striped :animated="animate" class="mb-2"></b-progress>
+            <b-progress :value="80" variant="info" striped :animated="animate" class="mb-2"></b-progress>
           </div>
 
         </b-card>
@@ -50,7 +52,6 @@
 import ColorTheme from './ColorTheme'
 
 export default {
-  name: 'colors',
-  components: { ColorTheme }
+  name: 'round2',
 }
 </script>

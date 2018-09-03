@@ -7,7 +7,7 @@
 
       <div class="card-body">
         <p>In the next table you can check the current price for one InvestMoney (IM)</p>
-        <p>(max amount for this round is: <strong>1000 IM</strong>)</p>
+        <p>(max amount for this round is: <strong>500.000 IM</strong>)</p>
         <table class="table">
           <thead>
             <tr>
@@ -20,10 +20,15 @@
               <td>
                 <p>1</p>
               </td>
-              <td><span class="h5">100 USD</span></td>
+              <td><span class="h5">10 USD</span></td>
             </tr>
           </tbody>
         </table>
+        
+          <p>Total founded: </p>
+          <div>
+            <b-progress :value="80" variant="success" striped :animated="animate" class="mb-2"></b-progress>
+          </div>
       </div>
     </div>
 
@@ -109,6 +114,6 @@
 
 <script>
 export default {
-  name: 'typography'
+  name: 'round1'
 }
 </script>

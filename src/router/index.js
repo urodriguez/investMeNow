@@ -7,8 +7,10 @@ const DefaultContainer = () => import('@/containers/DefaultContainer')
 // Views
 const Dashboard = () => import('@/views/Dashboard')
 
-const Colors = () => import('@/views/theme/Colors')
-const Typography = () => import('@/views/theme/Typography')
+const Round1 = () => import('@/views/round/Round1')
+const Round2 = () => import('@/views/round/Round2')
+const Round3 = () => import('@/views/round/Round3')
+const Round4 = () => import('@/views/round/Round4')
 
 
 const Charts = () => import('@/views/Charts')
@@ -78,22 +80,32 @@ export default new Router({
           component: Dashboard
         },
         {
-          path: 'theme',
-          redirect: '/theme/colors',
-          name: 'Theme',
+          path: 'round',
+          redirect: '/round/round1',
+          name: 'Round',
           component: {
             render (c) { return c('router-view') }
           },
           children: [
             {
-              path: 'colors',
-              name: 'Colors',
-              component: Colors
+              path: 'round1',
+              name: 'Round1',
+              component: Round1
             },
             {
-              path: 'typography',
-              name: 'Typography',
-              component: Typography
+              path: 'round2',
+              name: 'Round2',
+              component: Round2
+            },
+            {
+              path: 'round3',
+              name: 'Round3',
+              component: Round3
+            },
+            {
+              path: 'round4',
+              name: 'Round4',
+              component: Round4
             }
           ]
         },
