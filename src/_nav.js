@@ -50,7 +50,7 @@ export default {
     },
     {
       name: 'Assets',
-      url: '/pages/assets',
+      url: '/assets',
       icon: 'fas fa-briefcase'
     }
     /*{
