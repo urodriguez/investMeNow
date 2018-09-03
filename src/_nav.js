@@ -45,7 +45,7 @@ export default {
     },
     {
       name: 'Trade',
-      url: '/pages/trade',
+      url: '/dashboard',
       icon: 'fas fa-exchange-alt'
     },
     {

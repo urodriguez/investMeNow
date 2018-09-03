@@ -2,7 +2,7 @@
   <div class="app">
     <AppHeader fixed>
       <SidebarToggler class="d-lg-none" display="md" mobile />
-      <b-link class="navbar-brand" to="#">
+      <b-link class="navbar-brand" to="../pages/login">
         <img class="navbar-brand-full" src="img/brand/logo.png" style="max-width:150px; max-height:150px;">
       </b-link>
       <SidebarToggler class="d-md-down-none" display="lg" />
@@ -41,7 +41,6 @@
 
       <main class="main">
         <!-- <Breadcrumb :list="list"/> -->
-        <br>
         <br>
         <div class="container-fluid">
           <router-view></router-view>

@@ -51,7 +51,8 @@ export default {
   name: 'Login',
   methods: {
     login: function () {
-      this.$router.push('/dashboard')
+      this.$router.push('/round')
+
     }
   }
 }

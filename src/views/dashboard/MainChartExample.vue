@@ -30,8 +30,8 @@ export default {
       datasets: [
         {
           label: 'My First dataset',
-          backgroundColor: hexToRgba(brandInfo, 10),
-          borderColor: brandInfo,
+          backgroundColor: 'transparent',
+          borderColor: brandDanger,
           pointHoverBackgroundColor: '#fff',
           borderWidth: 2,
           data: data1
@@ -44,7 +44,7 @@ export default {
           borderWidth: 2,
           data: data2
         },
-        {
+        /*{
           label: 'My Third dataset',
           backgroundColor: 'transparent',
           borderColor: brandDanger,
@@ -52,7 +52,7 @@ export default {
           borderWidth: 1,
           borderDash: [8, 5],
           data: data3
-        }
+        }*/
       ]
     }, {
       tooltips: {
