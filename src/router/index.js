@@ -14,6 +14,8 @@ const Round4 = () => import('@/views/round/Round4')
 
 const AssetMain = () => import('@/views/assets/Main')
 
+const Detail = () => import('@/views/detail/Detail')
+
 
 const Charts = () => import('@/views/Charts')
 const Widgets = () => import('@/views/Widgets')
@@ -123,6 +125,21 @@ export default new Router({
               path: 'main',
               name: 'Main',
               component: AssetMain
+            }
+          ]
+        },
+        {
+          path: 'detail',
+          redirect: '/detail/detail',
+          name: 'Detail',
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: 'detail',
+              name: 'detail',
+              component: Detail
             }
           ]
         },

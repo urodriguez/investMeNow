@@ -14,7 +14,14 @@
         <p class="card-text">
           {{item.description}}}
         </p>
-    <b-button href="#" variant="primary">Go</b-button>
+
+
+        <router-link :to="{name: 'detail'}">
+          <b-button variant="primary">Go</b-button>
+        </router-link>
+
+
+
         </b-card>
         </b-col>
 
