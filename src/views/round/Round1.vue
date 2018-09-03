@@ -25,7 +25,7 @@
           </tbody>
         </table>
         
-          <p>Total founded: </p>
+          <p> <strong>Total founded:</strong> </p>
           <div>
             <b-progress :value="80" variant="success" striped :animated="animate" class="mb-2"></b-progress>
           </div>
