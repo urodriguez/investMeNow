@@ -11,7 +11,7 @@ export default {
     },
     {
       title: true,
-      name: 'Theme',
+      name: 'Founding',
       class: '',
       wrapper: {
         element: '',
@@ -19,14 +19,14 @@ export default {
       }
     },
     {
-      name: 'Colors',
-      url: '/theme/colors',
-      icon: 'icon-drop'
-    },
-    {
-      name: 'Typography',
+      name: 'Round 1',
       url: '/theme/typography',
       icon: 'icon-pencil'
+    },
+    {
+      name: 'Round 2',
+      url: '/theme/colors',
+      icon: 'icon-drop'
     },
     {
       title: true,
