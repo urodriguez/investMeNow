@@ -28,6 +28,7 @@
       <AsideToggler class="d-none d-lg-block" />
       <!--<AsideToggler class="d-lg-none" mobile />-->
     </AppHeader>
+
     <div class="app-body">
       <AppSidebar fixed>
         <SidebarHeader/>
@@ -36,28 +37,20 @@
         <SidebarFooter/>
         <SidebarMinimizer/>
       </AppSidebar>
+
       <main class="main">
         <Breadcrumb :list="list"/>
         <div class="container-fluid">
           <router-view></router-view>
         </div>
       </main>
+
       <AppAside fixed>
         <!--aside-->
         <DefaultAside/>
       </AppAside>
     </div>
-    <TheFooter>
-      <!--footer-->
-      <div>
-        <a href="https://coreui.io">CoreUI</a>
-        <span class="ml-1">&copy; 2018 creativeLabs.</span>
-      </div>
-      <div class="ml-auto">
-        <span class="mr-1">Powered by</span>
-        <a href="https://coreui.io">CoreUI for Vue</a>
-      </div>
-    </TheFooter>
+
   </div>
 </template>
 
