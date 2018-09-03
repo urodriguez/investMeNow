@@ -39,7 +39,9 @@
       </AppSidebar>
 
       <main class="main">
-        <Breadcrumb :list="list"/>
+        <!-- <Breadcrumb :list="list"/> -->
+        <br>
+        <br>
         <div class="container-fluid">
           <router-view></router-view>
         </div>

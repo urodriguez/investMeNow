@@ -7,7 +7,7 @@
 
       <div class="card-body">
         <p>In the next table you can check the current price for one InvestMoney (IM)</p>
-        <p>(max amount for this round is: <strong>1000 IM</strong>)</p>
+        <p>(max amount for this round is: <strong>1200 IM</strong>)</p>
         <table class="table">
           <thead>
             <tr>
