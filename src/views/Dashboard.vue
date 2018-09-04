@@ -103,57 +103,57 @@
     </b-col>
     <b-col sm="4" lg="4">
       <b-row>
-      <b-card title="Buy or Sell Invest Money" img-alt="Image" img-top tag="article">
-        <b-row>
-        <b-col sm="6" lg="6">
-          <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-            <b-form-group id="exampleInputGroup1"
-                          label="Price"
-                          label-for="exampleInput1">
-              <b-form-input id="exampleInput1"
-                            type="text"
-                            required
-                            placeholder="Price">
-              </b-form-input>
-            </b-form-group>
-            <b-form-group id="exampleInputGroup2"
-                          label="Amount"
-                            label-for="exampleInput2">
-              <b-form-input id="exampleInput2"
-                            type="text"
-                            required
-                            placeholder="Amount">
-              </b-form-input>
-            </b-form-group>
-            <b-button type="submit" variant="primary">Buy <i class="fas fa-angle-double-up"></i></b-button>
-          </b-form>
-        </b-col>
-        <b-col sm="6" lg="6">
-          <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-            <b-form-group id="exampleInputGroup1"
-                          label="Price"
-                          label-for="exampleInput1">
-              <b-form-input id="exampleInput1"
-                            type="text"
-                            required
-                            placeholder="Price">
-              </b-form-input>
-            </b-form-group>
-            <b-form-group id="exampleInputGroup2"
-                          label="Amount"
-                            label-for="exampleInput2">
-              <b-form-input id="exampleInput2"
-                            type="text"
-                            required
-                            placeholder="Amount">
-              </b-form-input>
-            </b-form-group>
-            <b-button type="submit" variant="danger">Sell <i class="fas fa-angle-double-down"></i></b-button>
-          </b-form>
-        </b-col>
-        </b-row>
-      </b-card>
-  </b-row>
+        <b-card title="Buy or Sell Invest Money" img-alt="Image" img-top tag="article" style="width: 100%;">
+          <b-row>
+          <b-col sm="6" lg="6">
+            <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+              <b-form-group id="exampleInputGroup1"
+                            label="Price"
+                            label-for="exampleInput1">
+                <b-form-input id="exampleInput1"
+                              type="text"
+                              required
+                              placeholder="Price">
+                </b-form-input>
+              </b-form-group>
+              <b-form-group id="exampleInputGroup2"
+                            label="Amount"
+                              label-for="exampleInput2">
+                <b-form-input id="exampleInput2"
+                              type="text"
+                              required
+                              placeholder="Amount">
+                </b-form-input>
+              </b-form-group>
+              <b-button type="submit" variant="primary">Buy <i class="fas fa-angle-double-up"></i></b-button>
+            </b-form>
+          </b-col>
+          <b-col sm="6" lg="6">
+            <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+              <b-form-group id="exampleInputGroup1"
+                            label="Price"
+                            label-for="exampleInput1">
+                <b-form-input id="exampleInput1"
+                              type="text"
+                              required
+                              placeholder="Price">
+                </b-form-input>
+              </b-form-group>
+              <b-form-group id="exampleInputGroup2"
+                            label="Amount"
+                              label-for="exampleInput2">
+                <b-form-input id="exampleInput2"
+                              type="text"
+                              required
+                              placeholder="Amount">
+                </b-form-input>
+              </b-form-group>
+              <b-button type="submit" variant="danger">Sell <i class="fas fa-angle-double-down"></i></b-button>
+            </b-form>
+          </b-col>
+          </b-row>
+        </b-card>
+      </b-row>
     </b-col>
     <b-col sm="4" lg="4">
       <b-card title="Sale" img-alt="Image" img-top tag="article">
